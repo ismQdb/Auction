@@ -1,0 +1,38 @@
+﻿<Window x:Class="AukcijskaProdaja.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AukcijskaProdaja"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="300" Width="450" Loaded="Window_Loaded">
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Row="0" VerticalAlignment="Center">
+            <Label Content="Current items:" HorizontalAlignment="Center"/>
+            <ListBox HorizontalAlignment="Left" Height="150"
+                 Width="253" Name="allItemsListBox"
+                 ItemsSource="{Binding AuctionItems}" DisplayMemberPath="AuctionItemName"
+                 SelectedItem="{Binding ItemToDelete}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center">
+            <!--Label Content="Edit items:" HorizontalAlignment="Center"></>
+            <Label Content=""></-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center">
+                <Button Content="Add new item" Margin="0,0,5,0" Width="92" Click="Button_Click"/>
+                <Button Content="Delete item" Margin="0,0,5,0" Width="92" Command="{Binding DeleteItemCommand}"/>
+                <Button Content="Refresh window" Width="92" Margin="0,0,5,0" Command="{Binding UpdateCommand}"/>
+                <Button Content="Close window" Width="92" Click="Button_Click_1" Margin="0,0,5,0"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+    
+</Window>
