@@ -1,0 +1,69 @@
+﻿<Window x:Class="AukcijskaProdaja.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AukcijskaProdaja"
+        xmlns:auction="clr-namespace:ViewModel;assembly=ViewModel"
+        xmlns:lastBidder="clr-namespace:Model;assembly=Model"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+
+    <Window.Resources>
+        <auction:AuctionViewModel x:Key="AuctionDataContext"/>
+    </Window.Resources>
+    
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Item available for bidding:" HorizontalAlignment="Center"/>
+            <!--Label Content="{Binding Source={StaticResource AuctionDataContext}, Path=AuctionInstance.CurrentAuctionItem}"
+                   Margin="0,0,0,5"/-->
+            <Label Content="{Binding Source={x:Static lastBidder:Auction._Instance}, Path=CurrentAuctionItem}"
+                   Margin="0,0,0,5" HorizontalContentAlignment="Center"/>
+            <Label Content="Time left for auction:" Margin="0,5,0,0" HorizontalAlignment="Center"></Label>
+            <TextBlock x:Name="timerTextBlock" Width="150" Height="50" TextAlignment="Center" FontSize="15"
+                       Text="{Binding Source={StaticResource AuctionDataContext}, Path=FormatText}"></TextBlock>
+            <!--Label Content="Last bid:" HorizontalAlignment="Center"/>
+            <Label HorizontalAlignment="Center" Height="23" Content="" Width="120"/-->
+            
+        </StackPanel>
+
+        
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Available items:" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <ListBox HorizontalAlignment="Center" Height="150" Width="200" Name="allItemsListBox" VerticalAlignment="Center"
+                 ItemsSource="{Binding AuctionItems}" DisplayMemberPath="AuctionItemName" Margin="0,0,0,10"/>
+            <Label Content="Item price:" HorizontalAlignment="Center" Grid.Column="0"/>
+            <Label HorizontalAlignment="Center" Height="23" VerticalAlignment="Center"
+                 Content="{Binding ElementName=allItemsListBox, Path=SelectedItem.AuctionItemPrice}" Width="120"
+                   HorizontalContentAlignment="Center"/>
+            <Label Content="Last bidder:" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <!--Label HorizontalAlignment="Center" Height="23" Content="{Binding Source={x:Static lastBidder:Auction._Instance},
+                Path=CurrentItemLastBidder.UserName}" Width="120"/-->
+            <Label HorizontalAlignment="Center" Height="23" Content="{Binding ElementName=allItemsListBox, 
+                Path=SelectedItem.AuctionItemLastBidder}" Width="120" HorizontalContentAlignment="Center"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Grid.ColumnSpan="2">
+            <Button Content="User login" HorizontalAlignment="Left" Width="100" Click="Button_Click" Height="35"/>
+            <Button Content="Refresh window" HorizontalAlignment="Center" Width="100" Height="35" Margin="10,0,0,0" 
+                    Command="{Binding UpdateCommand}"/>
+            <Button Content="Close the window" HorizontalAlignment="Right" Width="100" Height="35" Click="Button_Click_1"
+                    Margin="10,0,0,0"/>
+        </StackPanel>
+
+    </Grid>
+    
+</Window>

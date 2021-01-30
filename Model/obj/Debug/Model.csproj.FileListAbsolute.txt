@@ -1,0 +1,28 @@
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\AukcijskaProdaja\Model\obj\Debug\Model.Properties.Resources.resources
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\AukcijskaProdaja\Model\obj\Debug\Model.csproj.GenerateResource.cache
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\AukcijskaProdaja\Model\bin\Debug\Model.dll
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\AukcijskaProdaja\Model\bin\Debug\Model.pdb
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\AukcijskaProdaja\Model\obj\Debug\Model.csprojAssemblyReference.cache
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\AukcijskaProdaja\Model\obj\Debug\Model.dll
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\AukcijskaProdaja\Model\obj\Debug\Model.pdb
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\01. AukcijskaProdaja v1\Model\bin\Debug\Model.dll
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\01. AukcijskaProdaja v1\Model\bin\Debug\Model.pdb
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\01. AukcijskaProdaja v1\Model\obj\Debug\Model.csprojAssemblyReference.cache
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\01. AukcijskaProdaja v1\Model\obj\Debug\Model.Properties.Resources.resources
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\01. AukcijskaProdaja v1\Model\obj\Debug\Model.csproj.GenerateResource.cache
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\01. AukcijskaProdaja v1\Model\obj\Debug\Model.dll
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\01. AukcijskaProdaja v1\Model\obj\Debug\Model.pdb
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\03. AukcijskaProdaja v3 - Singleton\Model\bin\Debug\Model.dll
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\03. AukcijskaProdaja v3 - Singleton\Model\bin\Debug\Model.pdb
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\03. AukcijskaProdaja v3 - Singleton\Model\obj\Debug\Model.Properties.Resources.resources
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\03. AukcijskaProdaja v3 - Singleton\Model\obj\Debug\Model.csproj.GenerateResource.cache
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\03. AukcijskaProdaja v3 - Singleton\Model\obj\Debug\Model.dll
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\03. AukcijskaProdaja v3 - Singleton\Model\obj\Debug\Model.pdb
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\01. C#\03. AukcijskaProdaja v3 - Singleton\Model\obj\Debug\Model.csprojAssemblyReference.cache
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\zip\01. AukcijskaProdaja\Model\bin\Debug\Model.dll
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\zip\01. AukcijskaProdaja\Model\bin\Debug\Model.pdb
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\zip\01. AukcijskaProdaja\Model\obj\Debug\Model.csprojAssemblyReference.cache
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\zip\01. AukcijskaProdaja\Model\obj\Debug\Model.Properties.Resources.resources
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\zip\01. AukcijskaProdaja\Model\obj\Debug\Model.csproj.GenerateResource.cache
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\zip\01. AukcijskaProdaja\Model\obj\Debug\Model.dll
+F:\ITAcademy\Assignments\01. C#\08. Aukcijska prodaja\zip\01. AukcijskaProdaja\Model\obj\Debug\Model.pdb
